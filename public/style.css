@@ -1,0 +1,262 @@
+.topWrapper{
+    background: lightblue;
+    height: 100px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+}
+body, html {
+    height: 100%;
+}
+
+.top {
+    height: 50px;
+    background: black;
+}
+.top h3 {
+    margin: 0px;
+    padding: 0;
+    line-height: 50px;
+    color: grey;
+    align-content: center;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("./images/background1.jpg");
+
+    /* Full height */
+    height: 100vh;
+    min-height: 440px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 0;
+    transition: opacity 2s;
+}
+.parallax.navfixed {
+    margin-top: 49px;
+}
+
+.anchor {
+    position: absolute;
+    top: -47px;
+}
+
+#parabg2 {
+    background-image: url("./images/bg2.jpg");
+}
+
+#parabg3{
+    background-image: url("./images/bg3.jpg");
+}
+
+#parabg4{
+    background-image: url("./images/bg4.jpg")
+}
+
+#parabg5{
+    background-image: url("./images/bg5.jpg")
+}
+
+.parallax2 {
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+h1 {
+    position: relative;
+    color: cornflowerblue;
+    align-content: center;
+    border-color: grey;
+    border: 10px;
+    margin: 0px;
+    padding-top; 5px;
+    font-family: "Bookman Old Style";
+
+}
+
+#logo{
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+    opacity: 1;
+    height: auto;
+    width: auto;
+    max-width: 600px;
+    padding-top: 50px;
+}
+
+.splash{
+    height: 100vh;
+    width: 100%;
+    background: black;
+    opacity: .8;
+    overflow: hidden;
+    min-height: 440px;
+}
+
+.splash h1 {
+    color: grey;
+    top: 5%;
+    font-family: "Bookman Old Style";
+    font-size: 20px;
+    left: 10%;
+}
+
+.nav{
+    background-color: #333;
+    overflow: hidden;
+    z-index: 10;
+}
+.nav.fixed {
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+}
+
+.nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.header {
+    text-align: center;
+    font-family: "Bookman Old Style";
+    background: black;
+    height: 100px;
+    position: relative;
+}
+
+.header h1 {
+    line-height: 100px;
+}
+
+.splash2 {
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    background: black;
+
+}
+
+p {
+    color: grey;
+}
+
+.parallax2 p {
+    margin: 0px;
+    line-height: 27px;
+}
+
+.aboutdetails{
+    position: absolute;
+    left: 20%;
+    top: 0%;
+    max-width: 60%;
+    padding-top: 70px;
+}
+
+#me {
+    width: 40%;
+    height: 40%;
+    float: left;
+    margin-right: 20px;
+    margin-top: 4px;
+}
+
+#contact{
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+.slick-slider.one-time{
+    width: 80%;
+    left: 10%;
+    position: absolute;
+    z-index: 9;
+    top: 20px;
+}
+.one-time .slick-slide {
+    color: white;
+}
+.one-time .slick-slide img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+button.slick-next{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #41f4fa;
+}
+
+button.slick-prev{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #41f4fa transparent transparent;
+}
+
+button.slick-prev:before{
+    content: '';
+}
+
+button.slick-next:before {
+    content: '';
+}
+
+@media screen and (max-width: 800px) {
+
+    .nav a{
+        font-size: 10px;
+    }
+    #logo {
+        max-width: 300px;
+        margin-left: -150px;
+        top: 50%;
+        margin-top: -77px;
+    }
+    .splash h1 {
+        font-size: 12px;
+        top: 15%;
+    }
+
+    #me {
+        width:100%;
+        height:100%;
+    }
+
+    .aboutdetails{
+        left: 5%;
+        max-width: 90%;
+        padding-top: 18px;
+        overflow: scroll;
+    }
+
+}
